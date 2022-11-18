@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url(fonts/Inter-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url(fonts/Inter-Bold.ttf) format('truetype');
+}
+@font-face{
+    font-family: 'Inter-Light';
+    src: url(fonts/Inter-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Inter-ExtraLight';
+    src: url(fonts/Inter-ExtraLight.ttf) format('truetype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter-Regular', sans-serif;
+}
+
+.intro{
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-right: 5px;
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
