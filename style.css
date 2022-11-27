@@ -137,3 +137,29 @@ button:hover{
     font-size: 20px;
     margin-bottom: 25px;
 }
+#footer{
+    width: 100%;
+    padding:60px;
+    background-color: #090909;
+    color: #ffffff;
+
+    
+}
+.container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   text-align: center;
+}
+.conainer h2{
+    font-family: 'Inter-Regular', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+.container h3{
+    font-family: 'Inter-Thin', sans-serif;
+    font-weight: lighter;
+    padding-bottom: 25px;
+    
+}
