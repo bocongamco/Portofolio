@@ -1,3 +1,6 @@
+
+
+
 @font-face {
     font-family: 'Inter-Regular';
     src: url(fonts/Inter-Regular.ttf) format('truetype');
@@ -22,13 +25,17 @@
     font-family: 'Inter-Thin';
     src: url(fonts/Inter-Thin.ttf) format('truetype');
 }
+@font-face {
+    font-family: 'Terminal-fonts';
+    src: url(fonts/Modeseven-L3n5.ttf) format('truetype');
+}
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Inter-Regular', sans-serif;
-    font-family: 'Inter-Regular', sans-serif;
+    
 }
 
 .intro{
@@ -40,6 +47,7 @@
 }   
 
 nav{
+    
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -55,6 +63,7 @@ nav ul li{
 }
 
 nav ul li a{
+    font-family: 'Terminal-fonts', sans-serif;
     color: #ffffff;
     text-decoration: none;
 }
@@ -73,27 +82,30 @@ nav ul li a:hover{
 
 h1.name{
     color: #ffffff;
-    font-family: 'Inter-Bold', sans-serif;
+    font-family: 'Terminal-fonts', sans-serif;
     font-size: 48px;
 }
 h1.major{
     color: #ffffff;
-    font-family: 'Inter-Thin', sans-serif;
+    font-family: 'Terminal-fonts', sans-serif;
     font-size: 48px;
 }
 span{
-    font-family: 'Inter-ThinItalic', sans-serif;
+    font-family: 'Terminal-fonts', sans-serif;
+    color: #8b2c2c;
 }
 
 button{
+    font-family: 'Terminal-fonts', sans-serif;
     border: none;
     background: #5D5D66;
     padding: 12px;
     border-radius:15px;
     color: #ffffff;
-    font-family: 'Inter-Regular', sans-serif;
+    
 }
 button:hover{
+    font-family: 'Terminal-fonts', sans-serif;
     background: #2a2727;
     color: #C6C6C6;
     transition: .3s;
@@ -102,15 +114,17 @@ button:hover{
 .about-me{
     width: 100%;
     padding: 80px;
-    background-color: #EEEEEE;
+    background-color: #fffffffb;
 }
 .about-me img{
     height: 345px;
     width: 300px;
 }
 .about-text{
+    
     width: 650px;
 }
+
 .main{
     width: 1050px;
     max-width: 95%;
@@ -120,7 +134,7 @@ button:hover{
     justify-content: space-around;
 }
 .about-text h2{
-    font-family: 'Inter-Regular', sans-serif;
+    font-family: 'Terminal-fonts', sans-serif;
     font-weight: bold;
     font-size: 32px;
     
@@ -150,7 +164,7 @@ button:hover{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-   text-align: center;
+    text-align: center;
 }
 .conainer h2{
     font-family: 'Inter-Regular', sans-serif;
@@ -162,4 +176,68 @@ button:hover{
     font-weight: lighter;
     padding-bottom: 25px;
     
+}
+.skills{
+    height: 100vh;
+    width: 100%;
+    background-color: #1b1b1b;
+    
+    padding: 100px 0px;
+
+}
+.title{
+    
+    color: #ffffff;
+    margin: 30px auto;
+    text-align: center;
+}
+.title h1{
+    font-family: 'Terminal-fonts', sans-serif;
+    display: inline;
+    font-size: 60px;
+    border-bottom: 5px solid rgb(185, 84, 84);
+}
+
+.card-management{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 150px; 
+    height: 450px;
+    padding: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    margin: 30px;
+}
+.card i{
+    font-size: 100px;
+    margin: 30px auto;
+}
+.card-title{
+    margin: auto;
+    font-size: larger;
+    font-weight: bold;
+    padding-bottom: 9%;
+}
+
+
+
+.Portfolio{
+    background-color: #3d3d3d;
+    height: 100vh;
+    width: 100%;
+    padding: 100px 0px;
+}
+.sideproject{
+    color: #ffffff;
+    margin: 30px auto;
+    text-align: center ;
+}
+.sideproject h1{
+    font-family: 'Terminal-fonts', sans-serif;
+    display: inline;
+    font-size: 60px;
+    border-bottom: 5px solid rgb(185, 84, 84);
 }
