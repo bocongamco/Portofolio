@@ -9,26 +9,34 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
         
 
     </head>
 
     <body>
         
-        <section class ="intro">
+        <section class ="intro" id ="home">
+
+                    
             <nav>
                 <ul>
-                    <li> <a href ="#"> About me </a> </li>
-                    <li> <a href = "#"> My Skills</a> </li>
-                    <li> <a href = "#"> Portfolio </a> </li>
-                    <li> <a href = "#"> Contact</a> </li>
+                    <li> <a href ="#home"> Home </a> </li>
+                    <li> <a href ="#about"> About me </a> </li>
+                    <li> <a href = "#skills"> My Skills</a> </li>
+                    <li> <a href = "#portfolio"> Portfolio </a> </li>
+                    <li> <a href = "#footer"> Contact</a> </li>
                 </ul>
             </nav>
-
-            <div class = "details">
+            
+            <div class = "details" >
                      <h1 class ="name">Cao Nhat Tien Phat</h1> 
-                     <h1 class = "major">I'm a <span>back-end </span> Developer  </h1> 
-                     <button type ="button"> Download Resume </button>
+                     <h1 class = "major">I'm a <span>Software</span> Developer  </h1> 
+                     <button type="submit" onclick="window.open('CV/Nhat Tien Phat Cao CV.pdf')">Download Resume!</button>
+
                     
             </div>
 
@@ -38,7 +46,7 @@
         
 
 
-        <section class ="about-me">
+        <section class ="about-me" id = "about">
             <div class ="main">
                 <img src="images/avatar-removebg-preview.png">
                 <div class = "about-text">
@@ -49,12 +57,18 @@
                         Strong work ethic and thrive under pressure to deliver high-quality work on time.
                         Can provide solid skills in programming and teamwork. 
                     </p>
-                    <button type = "button">Download Resume</button>                    
+                    
+
+                    <button type="submit" onclick="window.open('CV/Nhat Tien Phat Cao CV.pdf')">Download Resume!</button>
+
+                    
+                    
+
                 </div>
             </div>
         </section>
 
-        <section class = "skills">
+        <section class = "skills" id = "skills">
            
             <div class ="title">
                 <h1>What i do?</h1>
@@ -93,10 +107,175 @@
 
         </section>
 
-        <section class ="Portfolio">
+        <section class ="portfolio" id ="portfolio">
             <div class ="sideproject">
                 <h1>My Project</h1>
             </div>
+            
+            <ul class = "gallery">
+                <li class="filter active" data-filter ="all">All</li>
+                <li class="filter" data-filter ="iOS">iOS</li>
+                <li class="filter" data-filter = "Android">Android </li>
+                <li class="filter" data-filter = "Website">Website</li>
+                <li class="filter" data-filter = "Game">Game</li>
+            </ul>
+             
+            <div class = "container-fluid">
+                <div class = "row">
+                    <div class = "column">
+
+                        <!-- Ios -->
+                        <div class="item iOS">
+                            <a data-fancybox = "gallery-a" href = "images/projects/Ios/WeatherApp/WeatherIcon.png">
+                                <img src = "images/projects/Ios/WeatherApp/WeatherIcon.png" data-item  ="iOS" alt="">
+                            </a>
+                        </div> 
+
+                        <div class="item iOS">
+                            <a data-fancybox = "gallery-a" href="images/projects/Ios/BookListApp/Bookadded.png">
+                                <img src = "images/projects/Ios/BookListApp/Bookadded.png" data-item  ="iOS" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item iOS">
+                            <a data-fancybox = "gallery-a" href="images/projects/Ios/HeroTeam/HeroManagementDefault.png">
+                                <img src = "images/projects/Ios/HeroTeam/HeroManagementDefault.png" data-item  ="iOS" alt="">
+                            </a>
+                        </div>
+                        
+
+                        <!-- Android -->
+                        <div class="item Android">
+                            <a data-fancybox = "gallery-b" href="images/projects/Android/Movie/Android 1.png">
+                                <img src = "images/projects/Android/Movie/Android 1.png" data-item  ="Android" alt="">
+                            </a>
+                        </div>
+
+                        
+                        <!-- Web -->
+                        <div class="item Website">
+                            <a data-fancybox = "gallery-c" href="images/projects/WebDev/Aromy/Aromy.png">
+                                <img src = "images/projects/WebDev/Aromy/Aromy.png" data-item  ="Website" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="item Website">
+                            <a data-fancybox = "gallery-c" href="images/projects/WebDev/LilDreamer/LilDreamerMusicAdmin.png">
+                                <img src = "images/projects/WebDev/LilDreamer/LilDreamerMusicAdmin.png" data-item  ="Website" alt="">             
+                            </a>
+                        </div>
+                        
+                        <!-- game -->
+                        <div class="item Game">
+                            <a data-fancybox ="gallery-d" href="images/projects/GameDev/Picture1.png">
+                                <img src = "images/projects/GameDev/Picture1.png" data-item  ="Game" alt="">
+                            </a>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class = "column">
+                        
+                        <!-- Ios -->
+                        <div class="item iOS">
+                            <a data-fancybox="gallery-a" href="images/projects/Ios/WeatherApp/ColourPicking.png">
+                                <img src = "images/projects/Ios/WeatherApp/ColourPicking.png" data-item  ="iOS" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item iOS">
+                            <a data-fancybox="gallery-a" href = "images/projects/Ios/BookListApp/BookList.png">
+                                <img src = "images/projects/Ios/BookListApp/BookList.png" data-item  ="iOS" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item iOS">
+                            <a data-fancybox="gallery-a" href ="images/projects/Ios/HeroTeam/ListHero.png">
+                                <img src = "images/projects/Ios/HeroTeam/ListHero.png" data-item  ="iOS" alt="">
+                            </a>
+                        </div>
+
+
+                        <!-- Android -->
+                        <div class="item Android">
+                            <a data-fancybox="gallery-b" href="images/projects/Android/Movie/Android 2.png">
+                                <img src = "images/projects/Android/Movie/Android 2.png" data-item  ="Android" alt="">
+                            </a>
+                        </div>
+
+
+                        <!-- Web -->
+                        <div class="item Website">
+                            <a data-fancybox="gallery-c"href="images/projects/WebDev/Aromy/AdminLogin.png">
+                                <img src = "images/projects/WebDev/Aromy/AdminLogin.png" data-item  ="Website" alt="">
+                            </a>
+                        </div>
+
+
+                        <div class="item Website">
+                            <a data-fancybox="gallery-c" href= "images/projects/WebDev/MonashHealth/MonashHealthLogin].png">
+                                <img src = "images/projects/WebDev/MonashHealth/MonashHealthLogin].png" data-item  ="Website" alt="">
+                            </a>
+                        </div>
+                        
+                        <!-- game -->
+                        <div class="item Game">
+                            <a data-fancybox="gallery-d" href = "images/projects/GameDev/theBackRoom.jpg">
+                                <img src = "images/projects/GameDev/theBackRoom.jpg" data-item  ="Game" alt="">
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                    <div class = "column">
+                        <!-- Ios -->
+                        <div class="item iOS">
+                            <a data-fancybox="gallery-a" href="images/projects/Ios/WeatherApp/WeatherIconView.png">
+                                <img src = "images/projects/Ios/WeatherApp/WeatherIconView.png" data-item  ="iOS" alt="">
+                            </a>
+                        </div>
+
+                        
+                        <div class="item iOS">
+                            <a data-fancybox="gallery-a" href ="images/projects/Ios/BookListApp/MultiSelectBook.png">
+                                <img src = "images/projects/Ios/BookListApp/MultiSelectBook.png" data-item  ="iOS" alt="">
+                            </a>
+                        </div>
+
+                        
+                        <div class="item iOS">
+                            <a data-fancybox="gallery-a" href = "images/projects/Ios/HeroTeam/CreateHero.png">
+                                <img src = "images/projects/Ios/HeroTeam/CreateHero.png" data-item  ="iOS" alt="">
+                            </a>
+                        </div>
+                        
+                        <!-- Android -->
+                        <div class="item Android">
+                            <a data-fancybox="gallery-b" href="images/projects/Android/Movie/Android 3.png">
+                                <img src = "images/projects/Android/Movie/Android 3.png" data-item  ="Android" alt="">
+                            </a>
+                        </div>
+                
+
+                        <!--Web  -->
+                        <div class="item Website">
+                            <a data-fancybox="gallery-c" href = "images/projects/WebDev/Aromy/AromyAdminPanel.png">
+                                <img src = "images/projects/WebDev/Aromy/AromyAdminPanel.png" data-item  ="Website" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item Website">
+                            <a data-fancybox="gallery-c" href ="images/projects/WebDev/MonashHealth/MonashHealth.png">
+                                <img src = "images/projects/WebDev/MonashHealth/MonashHealth.png" data-item  ="Website" alt="">
+
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+           </div>
+           
         </section>
 
 
@@ -107,9 +286,9 @@
                 <h4>For more information</h4>
                     <div class = "footnote-icon">
                             <a href="https://www.twitter.com/" class="twitter" style="color: white"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/" class="facebook" style="color: white"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="https://www.facebook.com/phatcao0607" class="facebook" style="color: white"><i class="fa-brands fa-square-facebook"></i></a>
                             <a href="https://www.instagram.com/" class="instagram" style="color: white"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/" class="linkedin" style="color: white"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/nhat-cao-745438215/" class="linkedin" style="color: white"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
             </div>
         </footer>
@@ -118,5 +297,9 @@
         
 
     </body>
-
+    <script src = "galleryfilter.js"> </script>
+    <script src = "sticky.js"> </script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/return-to-top@3.1.0/dist/index.min.js"></script>
+    
 </html>
